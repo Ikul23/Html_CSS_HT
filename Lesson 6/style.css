@@ -103,6 +103,10 @@ a {
   padding-left: 64px;
 }
 
+.fashon {
+  font-weight: bold;
+  color: #FF6F61; }
+
 .sale {
     display: flex;
     flex-wrap: wrap;
@@ -170,7 +174,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; 
-  text-align: center; 
+  text-align: start; 
 }
 
 .grid_image {
@@ -179,9 +183,9 @@ a {
 }
 
 .grid_text {
-  margin-top: 10px;
+  margin-top: 20px;
   font-weight: 400;
-  color: #222;
+  color: #222;  
 }
 
 .arrivals_price {
@@ -193,24 +197,35 @@ a {
   display: flex; 
   justify-content: center; }
   
-
 .button {
-  background: #F8F3F4;
-  color: #FF6F61; 
-  border: #FF6F61; 
-  padding: 10px 20px; 
-  font-size: 16px; 
-  cursor: pointer; 
-  border-radius: none;   
+  background: white;
+  color: #FF6F61;
+  border: 2px solid #FF6F61; 
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0; 
+  text-transform: uppercase; 
+  font-weight: bold; 
+  transition: background 0.3s ease, color 0.3s ease; 
+}
+
+.button:hover {
+  background: #FF6F61; 
+  color: white; 
 }
 
 
 .arrivals_header {
-  display: flex;
-  text-align: center;
-  align-items: center; 
-  
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
+
+
 
 
 @media(min-width: 848px) and (max-width: 1146px) {
