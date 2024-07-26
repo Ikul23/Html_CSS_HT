@@ -228,7 +228,7 @@ a {
 }
 
 /*Макет для мобильного устройства  разрешением 767-320 px */
-@media (max-width: 767px) {
+@media (max-width: 320px) {
   .container {
     max-width: 100%;
     margin: 0 auto;
@@ -244,12 +244,12 @@ a {
     line-height: 24px;
   }
 
-  .promo_img {
+  .promo__img {
     display: none;
   }
 
   .promo_info {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .promo_title {
@@ -263,21 +263,31 @@ a {
   }
 
   .promo__content {
-    padding-left: 0;
-    margin-top: 20px;
+    justify-content: center;
+    margin-bottom: 56px;
   }
 
-  .sale {
-    justify-content: center;
+   .sale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .sale__item {
-    width: calc(100% - 20px);
+    width: 100%;
     margin-bottom: 20px;
   }
 
-  .sale__item_big {
+  .sale__content {
     width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sale__text {
+    width: 100%;
+    font-size: 10px;
+    padding: 0 10px;
   }
 
   .new_arrivals {
