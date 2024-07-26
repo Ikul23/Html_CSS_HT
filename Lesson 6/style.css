@@ -239,20 +239,20 @@ a {
     flex-wrap: wrap;
   }
 
-  .head__heading {
+  .head_heading {
     font-size: 20px;
     line-height: 24px;
   }
 
-  .promo__img {
+  .promo_img {
     display: none;
   }
 
-  .promo__info {
+  .promo_info {
     margin-top: 20px;
   }
 
-  .promo__title {
+  .promo_title {
     font-size: 36px;
     line-height: 42px;
   }
