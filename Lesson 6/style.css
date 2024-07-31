@@ -23,7 +23,9 @@ a {
   margin: 0 auto;
 }
 
+
 .center {
+  max-width: 800px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -55,7 +57,7 @@ a {
   background: #F8F3F4;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
 }
 
@@ -121,7 +123,7 @@ a {
 }
 
 .sale__item_big {
-  width: calc(100% - 10px);
+  width: calc(100%);
 }
 
 .sale__content {
@@ -227,6 +229,144 @@ a {
   text-align: center;
 }
 
+.footer {
+  background-color: #222;
+  padding: 40px 0;
+  color: #fff;
+  margin-top: 95px;
+}
+
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;  
+}
+
+.footer__item {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer__item img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer__item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer__item p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FBFBFB;
+;
+}
+
+.footer__testimonial-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  background-image: url('./img/Foot_2_back.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  padding: 97px 126px;   
+}
+
+.footer__testimonial {
+  flex: 1;
+  text-align: center;
+}
+
+.footer__testimonial img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.footer__testimonial blockquote {
+  font-style: italic;
+  text-align: center;
+  color: #222224;
+}
+
+.footer__subscribe {
+  flex: 1;
+  text-align: center;
+}
+
+.footer__subscribe h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222224;
+  margin-bottom: 10px;
+}
+
+.footer__subscribe p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #222224;
+}
+
+.footer__subscribe form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__subscribe input[type="email"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px;
+  outline: none;
+}
+
+.footer__subscribe button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #FF6F61;
+  color: #fff;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+}
+
+.footer__subscribe button:hover {
+  background-color: #e65b50;
+}
+
+.footer__copyright-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color:  #FBFBFB;
+}
+
+.footer__copyright-social p {
+  display: flex;
+  justify-content: center;
+  margin: 45px auto;
+}
+
+.footer__social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  gap: 10px;
+}
+
+
 /*Макет для мобильного устройства  разрешением 767-320 px */
 @media (max-width: 320px) {
   .container {
@@ -301,5 +441,46 @@ a {
   .arrivals_header {
     font-size: 24px;
     padding: 20px;
+  }
+
+  
+  .footer__section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__item {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer__testimonial-subscribe {
+    flex-direction: column;
+  }
+
+  .footer__testimonial,
+  .footer__subscribe {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .footer__subscribe form {
+    flex-direction: column;
+  }
+
+  .footer__subscribe input[type="email"],
+  .footer__subscribe button {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer__copyright-social {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__social-icons {
+    margin-top: 10px;
   }
 }
